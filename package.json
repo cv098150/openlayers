@@ -1,0 +1,20 @@
+{
+  "name": "openlayers",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "copy": "cp -a dist/. public/",
+    "rename": "node -e \"require('fs').rename('public/index.html', 'public/index.php', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\"",
+    "copy-and-rename": "npm run copy && npm run rename",
+    "production": "npm run build && npm run copy-and-rename"
+
+  },
+  "devDependencies": {
+    "vite": "^2.6.7"
+  },
+  "dependencies": {
+    "ol": "latest"
+  }
+}
