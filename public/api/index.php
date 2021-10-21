@@ -5,7 +5,7 @@ class IndexAction
      * 地圖資訊
      */
     protected $mapData;
-    protected $dbHost = '192.168.208.3';
+    protected $dbHost = '127.0.0.1';
     protected $dbName = 'openlayers';
     protected $dbPort = '3306';
     protected $dbUser = 'root';
